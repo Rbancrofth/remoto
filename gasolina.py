@@ -11,18 +11,15 @@ sns.set(style='whitegrid')
 
 # Criar o gráfico de linha
 plt.figure(figsize=(10, 6))
-sns.lineplot(x='dia', y='preço', data=df, marker='o')
+sns.lineplot(x='dia', y='venda', data=df, marker='o')
 
 # Adicionar título e rótulos aos eixos
-plt.title('Preço da Gasolina entre os dias 01 e 10 de Julho')
+plt.title('Preço da Gasolina nos primeiros 10 dias de julho')
 plt.xlabel('Dia')
-plt.ylabel('Preço em R$')
+plt.ylabel('Preço em reais')
 
 # Salvar o gráfico
 plt.savefig('gasolina.png')
 
 # Exibir o gráfico
 plt.show()
-
-# Comentário adicional para simular uma atualização
-print("Gráfico gerado e salvo como gasolina.png")
